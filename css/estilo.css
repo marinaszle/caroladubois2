@@ -1,0 +1,441 @@
+header , footer {
+
+	background: #f5f3f2;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	margin-top: 0;
+	margin-bottom: 0;
+
+	
+}
+
+
+main {
+	font-family: Tahoma, sans-serif;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+nav ul li {
+	list-style-type: none;
+	font-size:medium;
+	display:inline; 
+}
+
+.portada {
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+	margin-top: 2px;
+
+
+}
+
+
+a {
+	text-decoration: none;
+	color: black;
+	padding-right: 40px;
+}
+
+
+.logobusqueda , .logocarrito{
+margin-right: 20px;
+}
+
+
+.newin {
+	text-align: center;
+	letter-spacing: 3px;
+	font-size: 25px;
+	scroll-snap-type: mandatory;
+}
+
+
+
+.imgProducto {
+	margin: 20px;
+
+}
+
+.imgProductos {
+
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	
+}
+
+.textoProducto {
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+	justify-content: center;
+
+}
+
+.botonCompra {
+
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+	border-radius:20px;
+	margin-top: 10px;
+	background-color: #e3d5dc;
+	transition: all .5s;
+	padding: 5px 20px 5px 20px;
+	color: black;
+
+
+ }
+
+ .botonCompra:hover {
+	font-size: 90%;
+	opacity: 80%;
+
+
+
+
+
+}
+
+
+
+h1 {
+	text-align: center;
+	letter-spacing: 3px;
+	font-size: 30px;
+	text-shadow: 2px 4px 6px #887f83;
+}
+
+.titulos {
+	margin:25px;
+
+
+}
+
+.subtitulos {
+
+	margin-left: 25px;
+	box-shadow: 0 0 9px darkgrey;
+	background-color: #dcd8da;
+	line-height: 100%;
+	padding: 8px;
+
+}
+
+.textoFaqs {
+
+	margin-left: 15px;
+	background-color: rgba(206, 204, 204, 0.144);
+	line-height: 100%;
+	padding: 8px;
+	border-radius: 10px;
+
+}
+
+
+
+
+.infocompras { 
+
+	background-color: #fff;
+	line-height: 100px;
+	letter-spacing: 2px;
+	padding-left: 38px;
+	padding-right: 38px;
+	box-shadow: 0 0 9px darkgrey;
+	display: flex ;
+	display: inline-block;
+	align-items: center;
+	border-radius: 25px;
+	flex-direction: row;
+
+
+}
+
+.hrestilo {
+
+height: 0; box-shadow: 0 1px 2px 1px rgb(226, 226, 226);
+display: flex;
+display: inline;
+flex-direction: row;
+
+}
+
+
+
+section form h4 {
+font-family: Tahoma;
+font-size: 18px;
+text-decoration: underline;
+
+
+}
+form {
+	width:600px;
+	padding:16px;
+	border-radius:10px;
+	margin:25px;
+	background-color:#ccc;
+}
+
+form label{
+	width:450px;
+	display:inline-block;
+	margin-top: 15px;
+	font-family: "tahoma";
+	font-size: 15px
+}
+
+form input[type="text"],
+form input[type="email"] , 
+form input[type="tel"] , 
+form input[type="password"]
+{
+	width:450px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	display:inline-block;
+}
+
+form input[type="submit"],form input[type="reset"]
+{
+	width:25%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+	display:inline;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:450px;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	resize:none;
+	display:block;
+}
+
+
+
+footer h4 {
+
+display: flex;
+flex-direction:row;
+justify-content: space-around;
+align-items:center;
+
+}
+
+header section {
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items: center;
+
+	
+}
+
+.newInImg{
+
+    margin-left: 20px;
+    margin-bottom: 70px;
+	display: flex;
+	justify-content: center;
+
+	
+}
+
+
+.inicioSesion {
+	display: flex;
+	justify-content: center;
+}
+
+.imgNosotros {
+padding-top: 10%;
+padding-left: 10%;
+
+
+}
+
+
+/*GRID INDEX*/
+.gridIndex {
+	display: grid;
+	grid-template-areas: 
+	"header"
+	"portada"
+	"infocompras"
+	"encabezado"
+	"imgNewIn"
+	"footer";
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto auto auto auto;
+
+}
+
+header {grid-area: header;}
+.portada {grid-area: portada;}
+.hrestilo {grid-area: infocompras;}
+.newin {grid-area: encabezado;}
+.newInImg {grid-area: imgNewIn;}
+footer {grid-area: footer}
+
+
+/*GRID NOSOTROS*/
+.gridMainNosotros {
+display: grid;
+grid-template-columns: 55% 45%;
+grid-template-rows: auto auto auto auto;
+grid-template-areas: 
+"header header "
+"encabezado encabezado "
+"texto img"
+"footer footer ";
+}
+
+header {grid-area: header;}
+.encabezadoNosotros {grid-area: encabezado;}
+.faqs {grid-area: texto;} 
+.imgNosotros {grid-area: img;}
+footer {grid-area: footer;}
+
+
+
+/*GRID PRODUCTOS*/
+.gridProductos {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas:
+
+	"header"
+	"encabezado"
+	"buscador"
+	"img"
+	"footer"
+
+}
+
+header {grid-area: header;}
+.encabezadoProductos {grid-area: encabezado;}
+.buscadorProductos {grid-area: buscador;}
+.imgProductos{grid-area: imgProductos;}
+footer {grid-area: footer}
+
+
+/*GRID MAYORISTAS*/
+.gridMayoristas {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas:
+
+	"header"
+	"encabezado"
+	"form"
+	"footer"
+}
+
+
+header {grid-area: header;}
+.encabezadoMayoristas {grid-area: encabezado }
+#form {grid-area: form}
+footer {grid-area: footer}
+
+
+
+/*GRID MI CUENTA*/
+.gridMicuenta {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto ;
+	grid-template-areas:
+
+	"header"
+	"encabezado"
+	"sesion"
+	"footer"
+
+}
+
+
+header {grid-area: header;}
+.encabezadoMicuenta {grid-area: encabezado }
+.inicioSesion {grid-area: form}
+footer {grid-area: footer}
+
+
+
+/*MEDIAQUERIE*/
+/*MOBILE*/
+@media only screen and (max-width: 768px) {
+header, footer h4, .menu, .gridIndex, .newInImg, .gridMicuenta,.gridMayoristas, .gridNosotros   { 
+	display: flex;
+	flex-direction: column;
+}
+
+
+.infocompras { 
+
+	line-height: 20px;
+	letter-spacing: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	box-shadow: 0 0 9px darkgrey;
+	display: flex ;
+	display: block;
+	border-radius: 5px;
+	flex-direction: column;
+}
+
+form, form label, form h4, input  {
+		width:300px;
+		padding:8px;
+		display: flex;
+		flex-wrap: wrap;
+}
+
+}
+
+	
+/*TABLET*/
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+    body .gridIndex{background-color: rgb(255, 255, 255);}
+
+}
+
+/*DESKTOP*/
+@media only screen and (min-width: 1024px) {
+	
+}
+
+
+
+a {
+	transition: all .5s;
+
+ }
+ a:hover {
+	font-size: 110%;
+	color: #bc97a8d7;
+	
+
+
+ }
+ 
