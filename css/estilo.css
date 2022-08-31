@@ -45,8 +45,6 @@ margin-right: 20px;
 
 .newin {
 	text-align: center;
-	letter-spacing: 3px;
-	font-size: 25px;
 	scroll-snap-type: mandatory;
 }
 
@@ -71,6 +69,7 @@ margin-right: 20px;
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
 	text-align: center;
 	justify-content: center;
+	font-size: large;
 
 }
 
@@ -105,6 +104,7 @@ h1 {
 	letter-spacing: 3px;
 	font-size: 30px;
 	text-shadow: 2px 4px 6px #887f83;
+	margin: 55px;
 }
 
 .titulos {
@@ -134,33 +134,32 @@ h1 {
 }
 
 
+#infocompras {
 
+	margin-top: 20px;
+	margin-bottom: 60px;
+	display: flex ;
+	justify-content: center;
 
-.infocompras { 
+}
+
+.infocompra { 
 
 	background-color: #fff;
 	line-height: 100px;
 	letter-spacing: 2px;
-	padding-left: 38px;
-	padding-right: 38px;
 	box-shadow: 0 0 9px darkgrey;
-	display: flex ;
-	display: inline-block;
-	align-items: center;
 	border-radius: 25px;
-	flex-direction: row;
+	display: flex ;
+	display: inline;
+	justify-content: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 5px;
 
 
 }
 
-.hrestilo {
-
-height: 0; box-shadow: 0 1px 2px 1px rgb(226, 226, 226);
-display: flex;
-display: inline;
-flex-direction: row;
-
-}
 
 
 
@@ -274,46 +273,7 @@ padding-left: 10%;
 }
 
 
-/*GRID INDEX*/
-.gridIndex {
-	display: grid;
-	grid-template-areas: 
-	"header"
-	"portada"
-	"infocompras"
-	"encabezado"
-	"imgNewIn"
-	"footer";
-	grid-template-columns: 1fr;
-	grid-template-rows: auto auto auto auto auto auto;
 
-}
-
-header {grid-area: header;}
-.portada {grid-area: portada;}
-.hrestilo {grid-area: infocompras;}
-.newin {grid-area: encabezado;}
-.newInImg {grid-area: imgNewIn;}
-footer {grid-area: footer}
-
-
-/*GRID NOSOTROS*/
-.gridMainNosotros {
-display: grid;
-grid-template-columns: 55% 45%;
-grid-template-rows: auto auto auto auto;
-grid-template-areas: 
-"header header "
-"encabezado encabezado "
-"texto img"
-"footer footer ";
-}
-
-header {grid-area: header;}
-.encabezadoNosotros {grid-area: encabezado;}
-.faqs {grid-area: texto;} 
-.imgNosotros {grid-area: img;}
-footer {grid-area: footer;}
 
 
 
@@ -391,18 +351,24 @@ header, footer h4, .menu, .gridIndex, .newInImg, .gridMicuenta,.gridMayoristas, 
 }
 
 
-.infocompras { 
+.infocompra { 
 
 	line-height: 20px;
 	letter-spacing: 5px;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding: 15px;
 	box-shadow: 0 0 9px darkgrey;
-	display: flex ;
-	display: block;
 	border-radius: 5px;
-	flex-direction: column;
+
 }
+
+#infocompras {
+display: flex;
+flex-wrap: wrap;
+
+
+}
+
+
 
 form, form label, form h4, input  {
 		width:300px;
@@ -411,7 +377,7 @@ form, form label, form h4, input  {
 		flex-wrap: wrap;
 }
 
-}
+
 
 	
 /*TABLET*/
@@ -430,12 +396,12 @@ form, form label, form h4, input  {
 a {
 	transition: all .5s;
 
- }
- a:hover {
+}
+
+a:hover {
 	font-size: 110%;
 	color: #bc97a8d7;
 	
 
 
- }
- 
+}
