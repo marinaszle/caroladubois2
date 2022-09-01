@@ -9,31 +9,26 @@
 	<title>Entrega 2</title>
 	</head>
 
-<body class="gridIndex">
-	<!--Comienzo del header-->
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-12 col-lg-12">
-			<header>
-				<section>
-					<img src="assets/img/logocarola.png" class="logocarola" alt="img logocarola" width=150 height=150> 
-					<nav>
-						<ul class="menu">
-						<li><a href="index.html">HOME </a></li>
-						<li><a href="pages/nosotros.html">NOSOTROS</a></li>
-						<li><a href="pages/producto.html">PRODUCTOS</a></li>
-						<li><a href="pages/mayoristas.html">MAYORISTAS</a></li>
-						<li><a href="pages/micuenta.html">MI CUENTA</a></li>
-						</ul>
-					</nav>
-					<p>
-						<img src="assets/img/busqueda.png" width = 23px; alt="logobusqueda" class="logobusqueda"> 
-						<img src="assets/img/carrito.png" width = 23px; alt="logocarrito" class="logocarrito"> 
-					</p>
-				</section>	
-			</header> 
-		</div>
-	</div>
+	<body  class="container-fluid" class="gridNosotros">
+		<!--Comienzo del header-->
+				<header class="row"> 
+					<section class="col-12 col-lg-12">
+						<img src="assets/img/logocarola.png" class="logocarola" alt="img logocarola" width=150 height=150> 
+						<nav>
+							<ul class="menu">
+							<li><a href="index.html">HOME </a></li>
+							<li><a href="pages/nosotros.html">NOSOTROS</a></li>
+							<li><a href="pages/producto.html">PRODUCTOS</a></li>
+							<li><a href="pages/mayoristas.html">MAYORISTAS</a></li>
+							<li><a href="pages/micuenta.html">MI CUENTA</a></li>
+							</ul>
+						</nav>
+						<p>
+							<img src="assets/img/busqueda.png" width = 23px; alt="logobusqueda" class="logobusqueda"> 
+							<img src="assets/img/carrito.png" width = 23px; alt="logocarrito" class="logocarrito"> 
+						</p>
+					</section>
+				</header>
 
 
 
@@ -43,15 +38,38 @@
 	<!--Comienzo del main-->
 
 			<main class="row" class="indexMain">
-					<article class="col-12 col-lg-12">
-						<img src="assets/img/portada4.jpg" class="portada" alt="img portada "><br>
+
+					<section class="col-12 col-lg-12">
+						<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+							<c:\Users\marin\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\code\electron-sandbox\workbench\workbench.htmldiv class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="assets/img/portada4.jpg" class="d-block w-100" alt="img portada">
+							</div>
+							<div class="carousel-item">
+								<img src="assets/img/portada5.jpg" class="d-block w-100" alt="img portada">
+							</div>
+							<div class="carousel-item">
+								<img src="assets/img/portada1.jpg" class="d-block w-100" alt="img portada">
+							</div>
+							
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</section>
+
 
 					<section class="col-12 col-lg-12" ID = infocompras> <hr>
 						<p class = "infocompra">10% OFF Pagando por transferencia </p>
 						<p class = "infocompra">CABA y ENVIOS A TODO EL PAIS </p>
 						<p class = "infocompra">Efectivo, todas las tarjetas y MercadoPago </p>
-
 					</section>
+
 					<section class="col-12 col-lg-12">
 						<h2 class ="newin">NEW IN </h2>
 						<div class = newInImg>
@@ -61,7 +79,6 @@
 						<h4 class = "textoProducto"> <img data-aos="fade-up" data-aos-duration="800" class = "imgProducto" src="assets/img/cartera_siberiana.JPG" alt="img cartera_siberiana" width=300 height=250> <br>Cartera Siberiana <br> <button class = "botonCompra">Comprar</button></h4> 
 						</div>
 					</section>
-				</article>
 			</main>
 
 	
@@ -69,7 +86,7 @@
 			<footer class="row">
 				<h4 class="col-12 col-lg-12">
 					<img src="assets/img/logocarola.png" alt="img logocarola" width=100 height=100>
-					<p class="instagram">¡Seguinos!  <br> <a href="https://www.instagram.com/carola.dubois"><img src="assets/img/instagram.png" width = 25px; alt="instagram" class="instagram"> </a></p>
+					<p class="instagram">¡Seguinos!  <br> <a href="https://www.instagram.com/carola.dubois"><img src="assets/img/instagram.png" width = 25px; alt="instagram" class="logoinstagram"> </a></p>
 					<p><img src="assets/img/email.png" width = 25px; alt="logoemail" class="logoemail"> caroladub@gmail.com <br> <img src="assets/img/telefono.png" width = 25px; alt="logotelefono" class="logotelefono">  +5491124064022</p>
 				</h4>
 			</footer>
@@ -79,7 +96,6 @@
 		AOS.init();
 	</script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</div>
 
 
 </body>
