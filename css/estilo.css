@@ -54,9 +54,12 @@ margin-right: 20px;
 
 .imgProducto  {
 	margin: 20px;
-	display: flex;
-	justify-content: center;
+
 }
+
+.imgProductos {
+}
+
 
 
 .textoProducto {
@@ -82,9 +85,9 @@ margin-right: 20px;
 	color: black;
 
 
- }
+}
 
- .botonCompra:hover {
+.botonCompra:hover {
 	font-size: 90%;
 	opacity: 80%;
 
@@ -125,13 +128,10 @@ h1 {
 
 .textoFaqs {
 
-	margin-left: 15px;
+
 	background-color: rgba(206, 204, 204, 0.144);
-	line-height: 100%;
-	padding: 8px;
 	border-radius: 10px;
 	letter-spacing: 1px;
-	line-height: 25px;
 	font-size: medium;
 
 }
@@ -283,7 +283,16 @@ padding-left: 30px;
 padding-top: 65px;
 }
 
+a {
+	transition: all .5s;
 
+}
+
+a:hover {
+	font-size: 110%;
+	color: #bc97a8d7;
+	
+}
 
 
 /*GRID MAYORISTAS*/
@@ -351,8 +360,6 @@ header, footer h4, .menu, .gridIndex, .newInImg, .gridMicuenta,.gridMayoristas, 
 #infocompras {
 display: flex;
 flex-wrap: wrap;
-
-
 }
 
 
@@ -364,7 +371,7 @@ form, form label, form h4, input  {
 		flex-wrap: wrap;
 }
 
-
+}
 
 	
 /*TABLET*/
@@ -379,16 +386,3 @@ form, form label, form h4, input  {
 }
 
 
-
-a {
-	transition: all .5s;
-
-}
-
-a:hover {
-	font-size: 110%;
-	color: #bc97a8d7;
-	
-
-
-}
