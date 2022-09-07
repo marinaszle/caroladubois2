@@ -1,0 +1,45 @@
+header {
+
+	background: #f5f3f2;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: smaller;
+	margin-top: 0;
+	margin-bottom: 0;
+    
+                li {
+            list-style-type: none;
+            font-size:medium;
+            display:inline; 
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        padding-right: 40px;
+                    }
+                }
+            }
+
+
+
+header section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+a {
+	transition: all .5s;
+
+    &:hover {
+	font-size: 110%;
+	color: #bc97a8d7;   	
+    }
+}
+
+.logobusqueda , .logocarrito{
+margin-right: 20px;
+}
+
+

@@ -1,0 +1,251 @@
+@import "variables";
+@import "header";
+@import "footer";
+
+
+main {
+	font-family: Tahoma, sans-serif;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.portada {
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+	margin-top: 2px;
+}
+
+
+.newin {
+	text-align: center;
+	scroll-snap-type: mandatory;
+}
+
+.imgProducto  {
+	margin: 20px;
+
+}
+
+
+.textoProducto {
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+	justify-content: center;
+	font-size: medium;	
+	display: inline-block;
+	margin-bottom: 60px;
+}
+
+.botonCompra {
+
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+	border-radius:20px;
+	margin-top: 10px;
+	background-color: #e3d5dc;
+	transition: all .5s;
+	padding: 5px 20px 5px 20px;
+	color: black;
+}
+
+.botonCompra:hover {
+	font-size: 90%;
+	opacity: 80%;
+}
+
+
+
+h1 {
+	text-align: center;
+	letter-spacing: 3px;
+	font-size: 30px;
+	text-shadow: 2px 4px 6px #887f83;
+	margin: 55px;
+}
+
+.titulos {
+	margin:25px;
+	font-size: x-large;
+}
+
+.subtitulos {
+
+	margin-left: 25px;
+	box-shadow: 0 0 9px rgba(234, 232, 232, 0.875);
+	background-color: #f5f3f2;
+	line-height: 100%;
+	padding: 8px;
+	font-size: larger;
+	letter-spacing: 1px;
+	line-height: 25px;
+}
+
+.textoFaqs {
+	background-color: rgba(206, 204, 204, 0.144);
+	border-radius: 10px;
+	letter-spacing: 1px;
+	font-size: medium;
+	}
+
+.faqs {
+    display: flex;
+    flex: auto;
+}   
+
+
+#infocompras {
+
+	margin-top: 20px;
+	margin-bottom: 60px;
+	display: flex ;
+	justify-content: center;
+}
+
+.infocompra { 
+	background-color: #fff;
+	line-height: 100px;
+	letter-spacing: 2px;
+	box-shadow: 0 0 9px darkgrey;
+	border-radius: 25px;
+	display: flex ;
+	display: inline;
+	justify-content: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 5px;
+}
+
+
+section form h4 {
+font-family: Tahoma;
+font-size: 18px;
+text-decoration: underline;
+}
+
+form {
+	width:600px;
+	padding:16px;
+	border-radius:10px;
+	margin:25px;
+	background-color: #e1e1e1;
+}
+
+form label{
+	width:450px;
+	display:inline-block;
+	margin-top: 15px;
+	font-family: "tahoma";
+	font-size: 15px;
+	
+}
+
+form input[type="text"],
+form input[type="email"] , 
+form input[type="tel"] , 
+form input[type="password"]
+{
+	width:450px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	display:inline-block;
+}
+
+form input[type="submit"],form input[type="reset"]
+{
+	width:25%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+	display:inline;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:450px;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	resize:none;
+	display:block;
+}
+
+
+.newInImg{
+
+    margin-left: 20px;
+    margin-bottom: 70px;
+	display: flex;
+	justify-content: center;
+}
+
+
+#inicioSesion {
+	display: flex;
+	justify-content: center;
+}
+
+#imgNosotros {
+padding-left: 30px;
+padding-top: 65px;
+}
+
+
+
+/*MEDIAQUERIE*/
+/*MOBILE*/
+@media only screen and (max-width: 768px) {
+header, footer h4, .menu, .gridIndex, .newInImg, .gridMicuenta,.gridMayoristas, .gridNosotros   { 
+	display: flex;
+	flex-direction: column;
+}
+
+
+.infocompra { 
+
+	line-height: 20px;
+	letter-spacing: 5px;
+	padding: 15px;
+	box-shadow: 0 0 9px darkgrey;
+	border-radius: 5px;
+
+}
+
+#infocompras {
+display: flex;
+flex-wrap: wrap;
+}
+
+
+
+form, form label, form h4, input  {
+		width:300px;
+		padding:8px;
+		display: flex;
+		flex-wrap: wrap;
+}
+
+}
+
+	
+/*TABLET*/
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+    body .gridIndex{background-color: rgb(255, 255, 255);}
+
+}
+
+/*DESKTOP*/
+@media only screen and (min-width: 1024px) {
+	
+}
