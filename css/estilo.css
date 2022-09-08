@@ -1,30 +1,31 @@
+/* cursor sobre textos y sombras */
+/* fondo pagina */
+/* fondo botones y subtitulos */
+/* fondo forms */
 header {
   background: #f5f3f2;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: smaller;
   margin-top: 0;
   margin-bottom: 0; }
-  header li {
-    list-style-type: none;
-    font-size: medium;
-    display: inline; }
-    header li a {
-      text-decoration: none;
-      color: black;
-      padding-right: 40px; }
-
-header section {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-
-a {
-  transition: all .5s; }
-  a:hover {
-    font-size: 110%;
-    color: #bc97a8d7; }
+  header section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    header section nav ul li {
+      list-style-type: none;
+      font-size: medium;
+      display: inline; }
+      header section nav ul li a {
+        text-decoration: none;
+        color: black;
+        padding-right: 40px;
+        transition: all .5s; }
+        header section nav ul li a:hover {
+          font-size: 110%;
+          color: #bc97a8d7; }
 
 .logobusqueda, .logocarrito {
   margin-right: 20px; }
@@ -35,13 +36,12 @@ footer {
   font-size: smaller;
   margin-top: 0;
   margin-bottom: 0; }
-
-footer h4 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  font-size: medium; }
+  footer h4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: medium; }
 
 .logoinstagram {
   padding-top: 5px;
@@ -78,7 +78,7 @@ main {
   text-align: center;
   border-radius: 20px;
   margin-top: 10px;
-  background-color: #e3d5dc;
+  background-color: #e7dde2;
   transition: all .5s;
   padding: 5px 20px 5px 20px;
   color: black; }
@@ -91,7 +91,6 @@ h1 {
   text-align: center;
   letter-spacing: 3px;
   font-size: 30px;
-  text-shadow: 2px 4px 6px #887f83;
   margin: 55px; }
 
 .titulos {
@@ -100,8 +99,8 @@ h1 {
 
 .subtitulos {
   margin-left: 25px;
-  box-shadow: 0 0 9px rgba(234, 232, 232, 0.875);
-  background-color: #f5f3f2;
+  background-color: #e7dde2;
+  border-radius: 10px;
   line-height: 100%;
   padding: 8px;
   font-size: larger;
@@ -109,7 +108,7 @@ h1 {
   line-height: 25px; }
 
 .textoFaqs {
-  background-color: rgba(206, 204, 204, 0.144);
+  background-color: #f5f3f2;
   border-radius: 10px;
   letter-spacing: 1px;
   font-size: medium; }
@@ -125,7 +124,6 @@ h1 {
   justify-content: center; }
 
 .infocompra {
-  background-color: #fff;
   line-height: 100px;
   letter-spacing: 2px;
   box-shadow: 0 0 9px darkgrey;
@@ -162,21 +160,19 @@ form input[type="tel"],
 form input[type="password"] {
   width: 450px;
   padding: 3px 10px;
-  border: 1px solid #f6f6f6;
+  border: 1px solid white;
   border-radius: 3px;
-  background-color: #f6f6f6;
   display: inline-block; }
 
 form input[type="submit"], form input[type="reset"] {
   width: 25%;
   padding: 8px 16px;
   margin-top: 32px;
-  border: 1px solid #000;
+  margin-bottom: 32px;
   border-radius: 5px;
-  display: block;
-  color: #fff;
-  background-color: #000;
-  display: inline; }
+  color: white;
+  background-color: black;
+  display: inline-block; }
 
 form input[type="submit"]:hover {
   cursor: pointer; }
@@ -184,9 +180,9 @@ form input[type="submit"]:hover {
 textarea {
   width: 450px;
   height: 100px;
-  border: 1px solid #f6f6f6;
+  border: 1px solid white;
   border-radius: 3px;
-  background-color: #f6f6f6;
+  background-color: white;
   margin: 8px 0;
   resize: none;
   display: block; }
@@ -228,7 +224,7 @@ textarea {
 
 /*TABLET*/
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
-  body .gridIndex {
+  body {
     background-color: white; } }
 
 /*DESKTOP*/
