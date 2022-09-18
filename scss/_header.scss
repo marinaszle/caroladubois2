@@ -6,11 +6,10 @@ header {
 	margin-top: 0;
 	margin-bottom: 0;
     
-        section {
-            display: flex;
+        section {           
+            @include displayYjustify (flex, space-between)
             flex-wrap: wrap;
             flex-direction:row;
-            justify-content:space-between;
             align-items: center;
 
             nav {
@@ -40,8 +39,6 @@ header {
 
 
 
-.logobusqueda , .logocarrito{
+.logobusqueda,.logocarrito {
 margin-right: 20px;
 }
-
-

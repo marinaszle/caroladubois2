@@ -1,13 +1,84 @@
 @import "variables";
+@import "mixins";
 @import "header";
 @import "footer";
-
 
 main {
 	font-family: Tahoma, sans-serif;
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
+
+/* TITULOS Y TEXTOS*/
+
+h1 {
+	text-align: center;
+	letter-spacing: 3px;
+	font-size: 30px;
+	margin: 55px;
+}
+
+.titulos {
+	margin:25px;
+	font-size: x-large;
+}
+
+.subtitulos {
+
+	@include bgroundYfsize ($bgSecundario,larger);
+	margin-left: 25px;
+    border-radius: 10px;
+	line-height: 100%;
+	padding: 8px;
+	letter-spacing: 1px;
+	line-height: 25px;
+}
+
+.textoProducto {
+	font-family:Verdana, Geneva, Tahoma, sans-serif;	
+	font-size: medium;	
+	text-align: center;	
+	@include displayYjustify (inline-block, center)
+
+
+	margin-bottom: 60px;
+}
+
+.textoFaqs {
+	@include bgroundYfsize ($bgPrimario,medium);
+	border-radius: 10px;
+	letter-spacing: 1px;
+	}
+
+.infocompra { 
+
+	line-height: 100px;
+	letter-spacing: 2px;
+	box-shadow: 0 0 9px $colorGris;
+	border-radius: 25px;
+	display: inline;
+	@include displayYjustify (flex, center)
+
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 5px;
+	}	
+
+.newin {
+	@include displayYjustify (flex, center)
+	}
+
+/* IMAGENES*/
+.imgProducto  {
+	margin: 20px;
+	margin-bottom: 70px
+} 
+
+.newInImg{
+	@extend .imgProducto;
+	@include displayYjustify (flex, center)
+	}
 
 .portada {
 	margin-left: 0;
@@ -16,26 +87,13 @@ main {
 	margin-top: 2px;
 }
 
-
-.newin {
-	text-align: center;
-	scroll-snap-type: mandatory;
-}
-
-.imgProducto  {
-	margin: 20px;
-
-}
+#imgNosotros {
+	padding-left: 30px;
+	padding-top: 65px;
+	}
 
 
-.textoProducto {
-	font-family:Verdana, Geneva, Tahoma, sans-serif;
-	text-align: center;
-	justify-content: center;
-	font-size: medium;	
-	display: inline-block;
-	margin-bottom: 60px;
-}
+/* BOTONES*/
 
 .botonCompra {
 
@@ -55,66 +113,23 @@ main {
 }
 
 
-
-h1 {
-	text-align: center;
-	letter-spacing: 3px;
-	font-size: 30px;
-	margin: 55px;
-}
-
-.titulos {
-	margin:25px;
-	font-size: x-large;
-}
-
-.subtitulos {
-
-	margin-left: 25px;
-	background-color: $bgSecundario;
-    border-radius: 10px;
-	line-height: 100%;
-	padding: 8px;
-	font-size: larger;
-	letter-spacing: 1px;
-	line-height: 25px;
-}
-
-.textoFaqs {
-	background-color: $bgPrimario;
-	border-radius: 10px;
-	letter-spacing: 1px;
-	font-size: medium;
+.logoemail{
+	size: 25px;
 	}
 
-.faqs {
-    display: flex;
-    flex: auto;
-}   
+.logotelefono {
+	font-size: 25px;
+	}
 
-
+	
 #infocompras {
 
 	margin-top: 20px;
 	margin-bottom: 60px;
-	display: flex ;
-	justify-content: center;
-}
+	@include displayYjustify (flex, center)
+	}
 
-.infocompra { 
-
-	line-height: 100px;
-	letter-spacing: 2px;
-	box-shadow: 0 0 9px $colorGris;
-	border-radius: 25px;
-	display: flex ;
-	display: inline;
-	justify-content: center;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin: 5px;
-}
-
+/* FORMS */
 
 section form h4 {
 font-family: Tahoma;
@@ -179,27 +194,9 @@ textarea{
 }
 
 
-.newInImg{
 
-    margin-left: 20px;
-    margin-bottom: 70px;
-	display: flex;
-	justify-content: center;
-}
+/* MEDIAQUERIE */
 
-
-#inicioSesion {
-	display: flex;
-	justify-content: center;
-}
-
-#imgNosotros {
-padding-left: 30px;
-padding-top: 65px;
-}
-
-
-/*MEDIAQUERIE*/
 /*MOBILE*/
 @media only screen and (max-width: 768px) {
 header, footer h4, .menu, .gridIndex, .newInImg, .gridMicuenta,.gridMayoristas, .gridNosotros   { 
