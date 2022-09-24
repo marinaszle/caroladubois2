@@ -1,31 +1,26 @@
 header {
-
 	background: $bgPrimario;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: smaller;
 	margin-top: 0;
 	margin-bottom: 0;
-    
         section {           
-            @include displayYjustify (flex, space-between)
+            @include displayYjustify (flex, space-between);
             flex-wrap: wrap;
             flex-direction:row;
             align-items: center;
-
             nav {
                 ul {
                     li {
                     list-style-type: none;
                     font-size:medium;
                     display:inline; 
-
                             a {
                                 text-decoration: none;
                                 color: black;
                                 padding-right: 40px;
                                 transition: all .5s;
                                 &:hover {
-                                    font-size: 110%;
                                     color: $colorPrimario;
                             } 
                         }
@@ -35,8 +30,7 @@ header {
         }
     }
 
-
-
 .logobusqueda,.logocarrito {
 margin-right: 20px;
 }
+

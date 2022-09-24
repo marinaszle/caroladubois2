@@ -1,4 +1,5 @@
 /* cursor sobre textos y sombras */
+/* cursor sobre botones y textos resaltados */
 /* fondo pagina */
 /* fondo botones y subtitulos */
 /* fondo forms */
@@ -24,7 +25,6 @@ header {
         padding-right: 40px;
         transition: all .5s; }
         header section nav ul li a:hover {
-          font-size: 110%;
           color: #bc97a8d7; }
 
 .logobusqueda, .logocarrito {
@@ -36,7 +36,7 @@ footer {
   font-size: smaller;
   margin-top: 0;
   margin-bottom: 0; }
-  footer h4 {
+  footer div {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -55,12 +55,19 @@ main {
   margin-top: 0;
   margin-bottom: 0; }
 
+#mainMicuenta {
+  background-image: url("../assets/img/imagenbg2.png");
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+
 /* TITULOS Y TEXTOS*/
 h1 {
   text-align: center;
   letter-spacing: 3px;
   font-size: 30px;
-  margin: 55px; }
+  margin: 55px;
+  font-weight: bold; }
 
 .titulos {
   margin: 25px;
@@ -68,21 +75,20 @@ h1 {
 
 .subtitulos {
   background-color: #e7dde2;
-  font-size: larger;
-  margin-left: 25px;
+  font-size: medium;
+  margin-left: 5px;
   border-radius: 10px;
   line-height: 100%;
   padding: 8px;
-  letter-spacing: 1px;
+  letter-spacing: .5px;
   line-height: 25px; }
 
 .textoProducto {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: medium;
   text-align: center;
   display: inline-block;
   justify-content: center;
-  margin-bottom: 60px; }
+  margin-bottom: 30px; }
 
 .textoFaqs {
   background-color: #f5f3f2;
@@ -106,10 +112,20 @@ h1 {
   display: flex;
   justify-content: center; }
 
+.precio {
+  color: #8e6f7d;
+  font-size: large;
+  font-weight: bold; }
+
 /* IMAGENES*/
 .imgProducto, .newInImg {
-  margin: 20px;
-  margin-bottom: 70px; }
+  margin: 30px;
+  border-radius: 15px; }
+
+#imgProductos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
 
 .newInImg {
   display: flex;
@@ -119,7 +135,9 @@ h1 {
   margin-left: 0;
   margin-right: 0;
   width: 100%;
-  margin-top: 2px; }
+  margin-top: 2px;
+  display: flex;
+  flex-wrap: wrap; }
 
 #imgNosotros {
   padding-left: 30px;
@@ -127,7 +145,6 @@ h1 {
 
 /* BOTONES*/
 .botonCompra {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   border-radius: 20px;
   margin-top: 10px;
@@ -137,8 +154,8 @@ h1 {
   color: black; }
 
 .botonCompra:hover {
-  font-size: 90%;
-  opacity: 80%; }
+  background-color: #8e6f7d;
+  color: white; }
 
 .logoemail {
   size: 25px; }
@@ -153,8 +170,12 @@ h1 {
   justify-content: center; }
 
 /* FORMS */
-section form h4 {
-  font-family: Tahoma;
+iframe {
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap; }
+
+section form div {
   font-size: 18px;
   text-decoration: underline; }
 
@@ -169,14 +190,13 @@ form label {
   width: 450px;
   display: inline-block;
   margin-top: 15px;
-  font-family: "tahoma";
   font-size: 15px; }
 
 form input[type="text"],
 form input[type="email"],
 form input[type="tel"],
 form input[type="password"] {
-  width: 450px;
+  width: 200px;
   padding: 3px 10px;
   border: 1px solid white;
   border-radius: 3px;
@@ -192,23 +212,13 @@ form input[type="submit"], form input[type="reset"] {
   background-color: black;
   display: inline-block; }
 
-form input[type="submit"]:hover {
+form input[type="submit"], form input[type="reset"]:hover {
   cursor: pointer; }
-
-textarea {
-  width: 450px;
-  height: 100px;
-  border: 1px solid white;
-  border-radius: 3px;
-  background-color: white;
-  margin: 8px 0;
-  resize: none;
-  display: block; }
 
 /* MEDIAQUERIE */
 /*MOBILE*/
 @media only screen and (max-width: 768px) {
-  header, footer h4, .menu, .gridIndex, .newInImg, .gridMicuenta, .gridMayoristas, .gridNosotros {
+  header, footer div, .gridIndex, .newInImg, .gridMicuenta, .gridMayoristas, .gridNosotros {
     display: flex;
     flex-direction: column; }
   .infocompra {
@@ -224,7 +234,10 @@ textarea {
     width: 300px;
     padding: 8px;
     display: flex;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .imgProducto, .newInImg {
+    margin-right: 0;
+    margin-left: 0; } }
 
 /*TABLET*/
 @media only screen and (min-width: 769px) and (max-width: 1023px) {

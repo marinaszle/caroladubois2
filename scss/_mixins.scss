@@ -1,4 +1,3 @@
-
 @mixin bgroundYfsize ($background, $fsize) {
 	background-color: $background;
 	font-size: $fsize;
@@ -7,5 +6,4 @@
 @mixin displayYjustify ($display,$justify){
 display: $display;
 justify-content: $justify;
-
 }
