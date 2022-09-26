@@ -184,7 +184,7 @@ form {
   padding: 16px;
   border-radius: 10px;
   margin: 25px;
-  background-color: #e1e1e1; }
+  background-color: darkgrey; }
 
 form label {
   width: 450px;
@@ -203,17 +203,20 @@ form input[type="password"] {
   display: inline-block; }
 
 form input[type="submit"], form input[type="reset"] {
-  width: 25%;
   padding: 8px 16px;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   border-radius: 5px;
   color: white;
   background-color: black;
-  display: inline-block; }
+  display: block; }
 
 form input[type="submit"], form input[type="reset"]:hover {
   cursor: pointer; }
+
+.margenesForms {
+  margin-top: 15px;
+  margin-bottom: 5px; }
 
 /* MEDIAQUERIE */
 /*MOBILE*/
