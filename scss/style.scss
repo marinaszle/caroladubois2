@@ -52,7 +52,7 @@ h1 {
 
 .textoFaqs {
 	@include bgroundYfsize ($bgPrimario,medium);
-	border-radius: 10px;
+	border-radius: 15px;
 	letter-spacing: 1px;
 	}
 
@@ -145,32 +145,37 @@ h1 {
 	display: flex;
 	justify-content: center;
 }
+
+.iniciarSesion {
+	@extend .titulos;
+	display: flex;
+	justify-content: center;
+
+}
+
 iframe {
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 	display: flex;
 	flex-wrap: wrap;
 }
 
-section form div {
-font-size: 18px;
-text-decoration: underline;
-}
-
 form {
 	width:600px;
-	padding:16px;
+	padding:18px;
 	border-radius:10px;
 	margin:25px;
 	background-color: $colorGris;
-
 }
 
+
+
+
 form label{
-	width:450px;
-	display:inline-block;
-	margin-top: 15px;
-	font-size: 15px;
-	
+	width:100%;
+	display:block;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	padding-bottom: 10px;
 }
 
 form input[type="text"],
@@ -178,11 +183,11 @@ form input[type="email"] ,
 form input[type="tel"] , 
 form input[type="password"]
 {
-	width:200px;
-	padding:3px 10px;
-	border:1px solid $colorBlanco;
+	width:100%;
+	border:5px solid $colorBlanco;
 	border-radius:3px;
-	display:inline-block;
+	margin-top: 10px;
+
 }
 
 form input[type="submit"],form input[type="reset"]
@@ -193,6 +198,8 @@ form input[type="submit"],form input[type="reset"]
 	border-radius:5px;
 	color: $colorBlanco;
 	background-color:$colorNegro;
+	opacity: 65%;
+	width: 100%;
 	display:block;
 } 
 
@@ -200,46 +207,29 @@ form input[type="submit"],form input[type="reset"]:hover{
 	cursor:pointer;
 }
 
-.margenesForms {
-	margin-top: 15px;
-	margin-bottom: 5px;
-}
 
 
-form, form label, form h4, input {
-    width: 250px;
-    padding: 8px;
-    display: flex;
-    flex-wrap: wrap;
-}
+
 
 /* MEDIAQUERIE */
 /*MOBILE*/
 @media only screen and (max-width: 768px) {
-header, footer div, .gridIndex, .newInImg, .gridMicuenta,.gridMayoristas, .gridNosotros   { 
+header, main, footer div, .gridIndex, .newInImg, .gridMicuenta,.gridMayoristas, .gridNosotros   { 
 	display: flex;
 	flex-direction: column;
 }
 
-
-.infocompra { 
+.infocompra {
 	line-height: 20px;
-	letter-spacing: 5px;
+	letter-spacing: 2px;
 	padding: 15px;
 	box-shadow: 0 0 9px $colorGris;
-	border-radius: 5px;
+	border-radius: 15px;
 }
 
 #infocompras {
 display: flex;
 flex-wrap: wrap;
-}
-
-form, form label, form h4, input  {
-		width:300px;
-		padding:8px;
-		display: flex;
-		flex-wrap: wrap;
 }
 
 .imgProducto {

@@ -3,51 +3,29 @@ header {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	margin-top: 0;
 	margin-bottom: 0;
-        section {           
-            nav {
-                ul {
-                    li {
-                    display:inline; 
-                            a {
-                                text-decoration: none;
-                                color: black;
-                                padding-right: 40px;
-                                transition: all .5s;
-                                &:hover {
-                                    color: $colorPrimario;
-                            } 
-                        }
-                    }
-                }
-            }
+}
+    .navbar-nav,.navbar-center {
+        float: left;
+        margin: 0;
+        left: 50%;
+        transform: translatex(-50%);
+        position: relative;
+    }       
+        .form-search {
+            margin: 0;
+            display: flex;
+            width:300px;
+            padding: 3px;
         }
-    }
 
-.logobusqueda,.logocarrito {
-margin-right: 20px;
-
+/*Cambio de color en navbar*/
+/*.navbar-light {
+    text-decoration: none;
+    color: black;
+    padding-right: 40px;
+    transition: all .5s;
+    &:hover {
+        color:$colorPrimario;
 }
-
-.logosHeader {
-    display: flex;
-    flex-wrap: wrap;
-    display: inline-block;
-    margin-top: 0;
-    padding-left: 5px;
-
 }
-
-.form-search {
-    margin: 0;
-    display: flex;
-}
-
-.navbar-nav,.navbar-center {
-    float: left;
-    margin: 0;
-    left: 50%;
-    transform: translatex(-50%);
-    position: relative;
-
-  }
-
+*/

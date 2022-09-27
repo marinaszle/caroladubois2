@@ -8,29 +8,6 @@ header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 0;
   margin-bottom: 0; }
-  header section nav ul li {
-    display: inline; }
-    header section nav ul li a {
-      text-decoration: none;
-      color: black;
-      padding-right: 40px;
-      transition: all .5s; }
-      header section nav ul li a:hover {
-        color: #bc97a8d7; }
-
-.logobusqueda, .logocarrito {
-  margin-right: 20px; }
-
-.logosHeader {
-  display: flex;
-  flex-wrap: wrap;
-  display: inline-block;
-  margin-top: 0;
-  padding-left: 5px; }
-
-.form-search {
-  margin: 0;
-  display: flex; }
 
 .navbar-nav, .navbar-center {
   float: left;
@@ -39,6 +16,23 @@ header {
   transform: translatex(-50%);
   position: relative; }
 
+.form-search {
+  margin: 0;
+  display: flex;
+  width: 300px;
+  padding: 3px; }
+
+/*Cambio de color en navbar*/
+/*.navbar-light {
+    text-decoration: none;
+    color: black;
+    padding-right: 40px;
+    transition: all .5s;
+    &:hover {
+        color:$colorPrimario;
+}
+}
+*/
 footer {
   background: #f5f3f2;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -78,7 +72,7 @@ h1 {
   margin: 55px;
   font-weight: bold; }
 
-.titulos {
+.titulos, .iniciarSesion {
   margin: 25px;
   font-size: x-large; }
 
@@ -102,7 +96,7 @@ h1 {
 .textoFaqs {
   background-color: #f5f3f2;
   font-size: medium;
-  border-radius: 10px;
+  border-radius: 15px;
   letter-spacing: 1px; }
 
 .infocompra {
@@ -183,37 +177,37 @@ h1 {
   display: flex;
   justify-content: center; }
 
+.iniciarSesion {
+  display: flex;
+  justify-content: center; }
+
 iframe {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   display: flex;
   flex-wrap: wrap; }
 
-section form div {
-  font-size: 18px;
-  text-decoration: underline; }
-
 form {
   width: 600px;
-  padding: 16px;
+  padding: 18px;
   border-radius: 10px;
   margin: 25px;
   background-color: darkgrey; }
 
 form label {
-  width: 450px;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 15px; }
+  width: 100%;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-bottom: 10px; }
 
 form input[type="text"],
 form input[type="email"],
 form input[type="tel"],
 form input[type="password"] {
-  width: 200px;
-  padding: 3px 10px;
-  border: 1px solid white;
+  width: 100%;
+  border: 5px solid white;
   border-radius: 3px;
-  display: inline-block; }
+  margin-top: 10px; }
 
 form input[type="submit"], form input[type="reset"] {
   padding: 8px 16px;
@@ -222,39 +216,26 @@ form input[type="submit"], form input[type="reset"] {
   border-radius: 5px;
   color: white;
   background-color: black;
+  opacity: 65%;
+  width: 100%;
   display: block; }
 
 form input[type="submit"], form input[type="reset"]:hover {
   cursor: pointer; }
 
-.margenesForms {
-  margin-top: 15px;
-  margin-bottom: 5px; }
-
-form, form label, form h4, input {
-  width: 250px;
-  padding: 8px;
-  display: flex;
-  flex-wrap: wrap; }
-
 /* MEDIAQUERIE */
 /*MOBILE*/
 @media only screen and (max-width: 768px) {
-  header, footer div, .gridIndex, .newInImg, .gridMicuenta, .gridMayoristas, .gridNosotros {
+  header, main, footer div, .gridIndex, .newInImg, .gridMicuenta, .gridMayoristas, .gridNosotros {
     display: flex;
     flex-direction: column; }
   .infocompra {
     line-height: 20px;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     padding: 15px;
     box-shadow: 0 0 9px darkgrey;
-    border-radius: 5px; }
+    border-radius: 15px; }
   #infocompras {
-    display: flex;
-    flex-wrap: wrap; }
-  form, form label, form h4, input {
-    width: 300px;
-    padding: 8px;
     display: flex;
     flex-wrap: wrap; }
   .imgProducto, .newInImg {
