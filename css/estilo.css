@@ -6,29 +6,38 @@
 header {
   background: #f5f3f2;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: smaller;
   margin-top: 0;
   margin-bottom: 0; }
-  header section {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center; }
-    header section nav ul li {
-      list-style-type: none;
-      font-size: medium;
-      display: inline; }
-      header section nav ul li a {
-        text-decoration: none;
-        color: black;
-        padding-right: 40px;
-        transition: all .5s; }
-        header section nav ul li a:hover {
-          color: #bc97a8d7; }
+  header section nav ul li {
+    display: inline; }
+    header section nav ul li a {
+      text-decoration: none;
+      color: black;
+      padding-right: 40px;
+      transition: all .5s; }
+      header section nav ul li a:hover {
+        color: #bc97a8d7; }
 
 .logobusqueda, .logocarrito {
   margin-right: 20px; }
+
+.logosHeader {
+  display: flex;
+  flex-wrap: wrap;
+  display: inline-block;
+  margin-top: 0;
+  padding-left: 5px; }
+
+.form-search {
+  margin: 0;
+  display: flex; }
+
+.navbar-nav, .navbar-center {
+  float: left;
+  margin: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  position: relative; }
 
 footer {
   background: #f5f3f2;
@@ -135,7 +144,7 @@ h1 {
   margin-left: 0;
   margin-right: 0;
   width: 100%;
-  margin-top: 2px;
+  margin-top: auto;
   display: flex;
   flex-wrap: wrap; }
 
@@ -222,6 +231,12 @@ form input[type="submit"], form input[type="reset"]:hover {
   margin-top: 15px;
   margin-bottom: 5px; }
 
+form, form label, form h4, input {
+  width: 250px;
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap; }
+
 /* MEDIAQUERIE */
 /*MOBILE*/
 @media only screen and (max-width: 768px) {
@@ -249,6 +264,8 @@ form input[type="submit"], form input[type="reset"]:hover {
 /*TABLET*/
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
   body {
-    background-color: white; } }
+    background-color: white; }
+  .logobusqueda, .logocarrito {
+    margin-top: 0; } }
 
 /*DESKTOP*/

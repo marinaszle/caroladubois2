@@ -98,7 +98,7 @@ h1 {
 	margin-left: 0;
 	margin-right: 0;
 	width: 100%;
-	margin-top: 2px;
+	margin-top: auto;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -204,6 +204,15 @@ form input[type="submit"],form input[type="reset"]:hover{
 	margin-top: 15px;
 	margin-bottom: 5px;
 }
+
+
+form, form label, form h4, input {
+    width: 250px;
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* MEDIAQUERIE */
 /*MOBILE*/
 @media only screen and (max-width: 768px) {
@@ -238,11 +247,17 @@ form, form label, form h4, input  {
 	margin-left: 0;
 }
 
+
 }
 
 /*TABLET*/
 @media only screen and (min-width: 769px) and (max-width: 1023px){
     body {background-color: $colorBlanco;}
+
+
+	.logobusqueda,.logocarrito {
+		margin-top: 0;
+	}
 }
 
 /*DESKTOP*/
