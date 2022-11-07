@@ -24,7 +24,7 @@ precioProducto4 = 0;
 
 
 do {
-    opciones = prompt('¡Hola! Muchas gracias por visitarnos. Por favor, seleccionar una opcion: \n1. Comprar un producto\n2. Continuar a la pagina');
+    opciones = prompt('¡Hola! Muchas gracias por visitarnos 🛍🤩. Por favor, seleccionar una opcion: \n1. Comprar un producto\n2. Continuar a la pagina');
 
     switch (opciones) {
         case '1':
@@ -94,3 +94,37 @@ function getProductsInShoppingCar(nombreProducto, precioProducto) {
     return carrito += '\n' + nombreProducto + ' - Cantidad: ' + precioProducto;
 }
 
+
+// Array con objeto 
+
+ const productos = [
+    {
+        id: 1,
+        name: "Riñonera Siames",
+        price: 3500,
+        category: "riñoneras",
+    },
+    {
+        id: 2,
+        name: "Cartera Lucy",
+        price: 3500,
+        category: "carteras",
+    },
+    {
+        id: 3,
+        name: "Bandolera Korat",
+        price: 3500,
+        category: "bandoleras",
+    },
+    {
+        id: 4,
+        name: "Mochila Burmes",
+        price: 3500,
+        category: "mochilas",
+    },
+]
+
+ // Metodo de busqueda con FIND 
+ let valorBuscado = "Cartera Lucy"
+ const busqueda = productos.find(productos => productos.nombre === valorBuscado)
+ console.log(busqueda)
